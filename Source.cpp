@@ -49,20 +49,14 @@ int main()
 		} 
 		if ((number[0] >= 'A' && number[0] <= 'Z') || (number[0] >= 'a' && number[0] <= 'z')) // search num
 		{
-			std::vector <std::map<std::string, std::string>::iterator> list_;
 			for (std::map<std::string, std::string>::iterator it = phonebook.begin(); 
 				 it != phonebook.end(); it++)
 			{
-				
 				if (compare(it->second, number))
 				{
-					list_.push_back(it);
+					std::cout << "Number: " << it->first << " name: " << it->second << std::endl;
 				}
 	
-			}
-			for (int i = 0; i < list_.size(); i++)
-			{
-				std::cout << "Number: " << list_[i]->first << " name: " << list_[i]->second << std::endl;
 			}
 		} 
 	}
