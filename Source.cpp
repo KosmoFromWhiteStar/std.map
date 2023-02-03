@@ -31,7 +31,8 @@ void output_name_on_number(std::string* number, std::map <std::string, std::stri
 
 void output_num_on_name(std::string* number, std::map <std::string, std::string>* phonebook)
 {
-	if (((*number)[0] >= 'A' && (*number)[0] <= 'Z') || ((*number)[0] >= 'a' && (*number)[0] <= 'z')) // search num
+	if (((*number)[0] >= 'A' && (*number)[0] <= 'Z') 
+		|| ((*number)[0] >= 'a' && (*number)[0] <= 'z')) // search num
 	{
 		for (std::map<std::string, std::string>::iterator it = phonebook->begin();
 			it != phonebook->end(); it++)
